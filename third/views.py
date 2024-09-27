@@ -28,6 +28,7 @@ def detail(request, id):
     
     return render(request, 'third/detail.html', context)
 
+
 def create(request):
     if request.method == 'POST':
         form = RestaurantForm(request.POST)

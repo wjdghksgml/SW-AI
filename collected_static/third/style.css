@@ -1,0 +1,263 @@
+/* form-style.css */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Gowun Batang", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+form {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table tr {
+    margin-bottom: 10px;
+}
+
+table td {
+    padding: 10px 5px;
+}
+
+table input, table select, table textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; /* 파란색 버튼 */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* 버튼 hover 시 더 진한 파란색 */
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    table td {
+        padding: 8px 3px;
+    }
+
+    button[type="submit"] {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        font-size: 1em;
+    }
+}
+
+/* restaurant-list-hover.css */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.restaurant-item {
+    margin-bottom: 20px;
+}
+
+.card {
+    border: 1px solid #0056b3; /* 파란색 테두리 */
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* hover 시 그림자 */
+    transform: translateY(-5px); /* 살짝 위로 떠오르는 효과 */
+}
+
+.card-title {
+    font-size: 1.5em;
+    color: #0056b3; /* 파란색 제목 */
+}
+
+.card-subtitle {
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+.card-text {
+    font-size: 1em;
+    color: #333;
+}
+
+.card-link {
+    color: #007bff; /* 파란색 링크 */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.card-link:hover {
+    color: #0056b3; /* hover 시 더 진한 파란색 */
+}
+
+/* 페이지네이션 스타일 */
+.pagination {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.pagination a {
+    color: #007bff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* hover 시 페이지 링크에도 그림자 추가 */
+}
+
+.pagination .current {
+    padding: 8px 16px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #0056b3;
+    color: white;
+    margin: 0 4px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.3em;
+    }
+
+    .card-subtitle {
+        font-size: 1.1em;
+    }
+
+    .card-text {
+        font-size: 0.95em;
+    }
+
+    .pagination a, .pagination .current {
+        padding: 6px 12px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-title {
+        font-size: 1.2em;
+    }
+
+    .card-subtitle {
+        font-size: 1em;
+    }
+
+    .card-text {
+        font-size: 0.9em;
+    }
+
+    .pagination a, .pagination .current {
+        padding: 5px 10px;
+        font-size: 0.85em;
+    }
+    
+    @media (max-width: 768px) {
+        .container {
+            max-width: 90%; /* 작은 화면에서는 90%로 설정 */
+        }
+    }
+}
+
+/* navbar-style.css */
+.navbar {
+    background-color: #0056b3; /* 파란색 배경 */
+    border-bottom: 2px solid #004494; /* 진한 파란색 하단 테두리 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Do Hyeon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    color: white; /* 브랜드명을 하얀색으로 */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #d1e8ff; /* hover 시 연한 파란색 */
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white; /* 기본 링크 색상 */
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #004494; /* hover 시 진한 파란색 배경 */
+    color: #d1e8ff; /* 링크 색상 연한 파란색 */
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.collapse.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .navbar-nav .nav-item .nav-link {
+        padding: 8px 10px;
+        font-size: 1em;
+    }
+}
